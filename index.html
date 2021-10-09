@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX ta'lim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+<body>
+    <div class="root">
+  <header class="header">
+    <div class="header__container">
+        <div class="nav__brand">
+         <img src="images/brand_logo.png" class="brand__logo" width="100px" height="100px" alt="">
+         <h2 class="brand__text">APEX TA'LIM</h2>
+        </div>
+        <nav class="nav"  id="nav-menu">
+            <ion-icon name="close-outline" class="header__close" id="close-menu"></ion-icon>
+
+          <ul class="nav__list">
+             <li class="nav__item"> <a href="#yangiliklar" class="nav__link">Yangiliklar</a></li>
+             <li class="nav__item"> <a href="#kurslar" class="nav__link">Kurslar </a></li>
+             <li class="nav__item"> <a href="#ustozlar" class="nav__link">Ustozlar</a></li>
+             <li class="nav__item"> <a href="#fotolavhalar" class="nav__link">Fotolavhalar</a></li>
+             <li class="nav__item"> <a href="#videolavhalar" class="nav__link">Videolavhalar</a></li>
+             <li class="nav__item"> <a href="#natijalar" class="nav__link">Natijalar</a></li>
+             <li class="nav__item"> <a href="#izohalr" class="nav__link">Izohlar</a></li>
+             <li class="nav__item"> <a href="#aloqa" class="nav__link">Aloqa</a></li>
+           </ul>
+        </nav>
+        <ion-icon name="menu-outline" class="header__toggle" id="toggle-menu"></ion-icon>
+    </div>
+    <div class="header__text">
+        <h1>Talaba bo'lishingizga  albatta ishonamiz</h1>
+    <p>Shaxmatda yo‘lga chiqqan piyoda, bir kun kelib albatta vazir bo’ladi.</p>
+    <button  onclick="popupToggle();" class="header__btn" id="mm"><a href="#mm" class="header__btn-link" >Kursga yozilish</a></button>
+    
+    <div id="popup">
+         <div class="content">
+             <div class="popup__brand">
+                <img src="images/popup-img.png" class="popup__brand-logo" width="100px" height="100px" alt="">
+                <h3 class="popup__brand-text" >APEX TA'LIM</h3>
+                <ion-icon onclick="popupToggle();" name="close-outline" class="popup__close" id="close-menu"></ion-icon>
+            </div>
+            <h1 class="popup__top-text" >Kursga yozilish</h1>
+            <div class="popup__input">
+                <input type="text" class="popup__name" placeholder="Ism va familyangizni yozing" name="" id="">
+                <input type="number" class="popup__number" placeholder="Telefon raqamingizni yozing" name="" id="">
+            </div>
+             <button class="popup__submit"> <a href="" class="popup__submit-link">Kursga yozilish</a></button>
+         </div>
+     </div>
+
+</div>
+    <div class="header__img">
+    
+     <img src="images/header-img1.png" class="header__bottom"   width="284px" height="135px" alt="">
+    </div>
+  </header>
+
+  <!-- Yangiliklar -->
+        <section id="yangiliklar" class="yangiliklar">
+        <h2 class="news__top">Yangiliklar</h2>
+          <div class="wrapper">
+        <div class="carousel owl-carousel">
+               <div class="news__carousel-box">
+                  <img src="images/yangilik1.jpg" class="news__carousel-img" alt=""> 
+                  <h6 class="news__carousel-text">Mental arifmetikani oson o'rganamiz</h6>
+                  <p class="news__carousel-date">22.09.20021</p>
+               </div>
+               <div class="news__carousel-box">
+                <img src="images/yangilik2.jpg" class="news__carousel-img" alt=""> 
+                <h6 class="news__carousel-text">IELTS imtihoni haqida</h6>
+                <p class="news__carousel-date">22.09.20021</p>
+             </div>
+             <div class="news__carousel-box">
+                <img src="images/yangilik3.jpg" class="news__carousel-img" alt=""> 
+                <h6 class="news__carousel-text">Ingliz tilini bilish zamon talabi</h6>
+                <p class="news__carousel-date">12.09.20021</p>
+             </div>
+             <div class="news__carousel-box">
+                <img src="images/yangilik2.jpg" class="news__carousel-img" alt=""> 
+                <h6 class="news__carousel-text">IELTS imtihoni haqida</h6>
+                <p class="news__carousel-date">22.09.20021</p>
+             </div>
+             <div class="news__carousel-box">
+                <img src="images/yangilik1.jpg" class="news__carousel-img" alt=""> 
+                <h6 class="news__carousel-text">Mental arifmetikani oson o'rganamiz</h6>
+                <p class="news__carousel-date">22.09.20021</p>
+             </div>
+             <div class="news__carousel-box">
+                <img src="images/yangilik3.jpg" class="news__carousel-img" alt=""> 
+                <h6 class="news__carousel-text">Ingliz tilini bilish zamon talabi</h6>
+                <p class="news__carousel-date">12.09.20021</p>
+             </div>
+             <div class="news__carousel-box">
+              <img src="images/yangilik2.jpg" class="news__carousel-img" alt=""> 
+              <h6 class="news__carousel-text">IELTS imtihoni haqida</h6>
+              <p class="news__carousel-date">22.09.20021</p>
+           </div>
+           </div> </div>
+
+
+             <div id="news__modal">
+               <div class="news__modal-content">
+
+               </div>
+             </div>
+            </section>
+          
+            <!-- Kurslar -->
+            <section id="kurslar" class="kurslar">
+              <h2 class="news__top">Kurslar</h2>
+              <div class="wrapper">
+                <div class="carousel owl-carousel">
+                    <div class="course__carousel-box">
+                        <img src="images/courimg1.png" class="course__car-img" alt="">
+                        <h5 class="course__h5">Matematika</h5>
+                        <p class="course__p">Matematika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.</p>
+                        <button class="course__btn" onclick="popupToggle()" id="tab"><a href="#tab" class="course__btn-link" >Kursga yozilish</a></button>
+                    </div>
+                    <div class="course__carousel-box">
+                      <img src="images/courimg2.png" class="course__car-img" alt="">
+                      <h5 class="course__h5">Fizika</h5>
+                      <p class="course__p">Fizika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.</p>
+                      <button class="course__btn" onclick="popupToggle()" id="tab"><a href="#tab" class="course__btn-link" >Kursga yozilish</a></button>
+                  </div>
+                  <div class="course__carousel-box">
+                    <img src="images/courimg3.png" class="course__car-img" alt="">
+                    <h5 class="course__h5">Ingliz tili</h5>
+                    <p class="course__p">Ingliz tili fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.</p>
+                    <button class="course__btn" onclick="popupToggle()" id="tab"><a href="#tab" class="course__btn-link" >Kursga yozilish</a></button>
+                </div>
+                <div class="course__carousel-box">
+                  <img src="images/courimg2.png" class="course__car-img" alt="">
+                  <h5 class="course__h5">Fizika</h5>
+                  <p class="course__p">Fizika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.</p>
+                  <button class="course__btn" onclick="popupToggle()" id="tab"><a href="#tab" class="course__btn-link" >Kursga yozilish</a></button>
+              </div>
+              <div class="course__carousel-box">
+                <img src="images/courimg1.png" class="course__car-img" alt="">
+                <h5 class="course__h5">Matematika</h5>
+                <p class="course__p">Matematika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.</p>
+                <button class="course__btn" onclick="popupToggle()" id="tab"><a href="#tab" class="course__btn-link" >Kursga yozilish</a></button>
+            </div>
+            <div class="course__carousel-box">
+              <img src="images/courimg3.png" class="course__car-img" alt="">
+              <h5 class="course__h5">Ingliz tili</h5>
+              <p class="course__p">Ingliz tili fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.</p>
+              <button class="course__btn" onclick="popupToggle()" id="tab"><a href="#tab" class="course__btn-link" >Kursga yozilish</a></button>
+          </div>
+          <div class="course__carousel-box">
+            <img src="images/courimg2.png" class="course__car-img" alt="">
+            <h5 class="course__h5">Fizika</h5>
+            <p class="course__p">Fizika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.</p>
+            <button class="course__btn" onclick="popupToggle()" id="tab"><a href="#tab" class="course__btn-link" >Kursga yozilish</a></button>
+        </div>
+                </div>
+            </div>
+            </section>
+
+
+    <!-- Ustozlar -->
+    <section id="ustozlar" class="ustozlar">
+      <h2 class="news__top">Ustozlar</h2>
+      <div class="wrapper">
+       <div class="carousel owl-carousel">
+         <div class="teach__carousel-box">
+           <img src="images/teachimg1.png" class="teach__car-img" alt="">
+          <div class="teach__car-text">
+            <h3 class="teach__carh3">Asadov Qodir</h3>
+            <div class="teach__pgroup">
+              <p>Matematika fani o'qituvchisi</p>
+              <p class="teach__center">Ish tajribasi:8 yil</p>
+              <p>O'qitgan talabalalar soni:500+</p>
+            </div>
+          </div>
+
+         </div>
+         <div class="teach__carousel-box">
+          <img src="images/teachimg2.png" class="teach__car-img" alt="">
+         <div class="teach__car-text">
+           <h3 class="teach__carh3">Ergashev Jasur</h3>
+           <div class="teach__pgroup">
+             <p>Fizika fani o'qituvchisi</p>
+             <p class="teach__center">Ish tajribasi:5 yil</p>
+             <p>O'qitgan talabalalar soni:400+</p>
+           </div>
+         </div>
+
+        </div>
+        <div class="teach__carousel-box">
+          <img src="images/teachimg3.png" class="teach__car-img" alt="">
+         <div class="teach__car-text">
+           <h3 class="teach__carh3">Murodov Alibek</h3>
+           <div class="teach__pgroup">
+             <p>Ingliz tili fani o'qituvchisi</p>
+             <p class="teach__center">Ish tajribasi:4 yil</p>
+             <p>O'qitgan talabalalar soni:300+</p>
+           </div>
+         </div>
+        </div>
+        <div class="teach__carousel-box">
+          <img src="images/teachimg2.png" class="teach__car-img" alt="">
+         <div class="teach__car-text">
+           <h3 class="teach__carh3" >Ergashev Jasur</h3>
+           <div class="teach__pgroup">
+             <p>Fizika fani o'qituvchisi</p>
+             <p class="teach__center">Ish tajribasi:5 yil</p>
+             <p>O'qitgan talabalalar soni:400+</p>
+           </div>
+         </div>
+
+        </div>
+        <div class="teach__carousel-box">
+          <img src="images/teachimg1.png" class="teach__car-img" alt="">
+         <div class="teach__car-text">
+           <h3 class="teach__carh3" >Asadov Qodir</h3>
+           <div class="teach__pgroup">
+             <p>Matematika fani o'qituvchisi</p>
+             <p class="teach__center">Ish tajribasi:8 yil</p>
+             <p>O'qitgan talabalalar soni:500+</p>
+           </div>
+         </div>
+
+        </div>
+        <div class="teach__carousel-box">
+          <img src="images/teachimg3.png" class="teach__car-img" alt="">
+         <div class="teach__car-text">
+           <h3 class="teach__carh3" >Murodov Alibek</h3>
+           <div class="teach__pgroup">
+             <p>Ingliz tili fani o'qituvchisi</p>
+             <p class="teach__center">Ish tajribasi:4 yil</p>
+             <p>O'qitgan talabalalar soni:300+</p>
+           </div>
+         </div>
+
+        </div>
+        <div class="teach__carousel-box">
+          <img src="images/teachimg2.png" class="teach__car-img" alt="">
+         <div class="teach__car-text">
+           <h3 class="teach__carh3" >Ergashev Jasur</h3>
+           <div class="teach__pgroup">
+             <p>Fizika fani o'qituvchisi</p>
+             <p class="teach__center">Ish tajribasi:5 yil</p>
+             <p>O'qitgan talabalalar soni:400+</p>
+           </div>
+         </div>
+
+        </div>
+
+       </div>
+      </div>
+
+    </section>
+
+
+    <!-- Fotolavhalar -->
+    <section id="fotolavhalar" class="fotolavhalar">
+      <h2 class="news__top">Fotolavhalar</h2>
+      <div class="wrapper">
+      <div class="carousel owl-carousel">
+       <div class="photo__box">
+         <img src="images/photo11.png" class="photo__top" alt="">
+         <img src="images/photo12.png" alt="">
+       </div>
+       <div class="photo__box">
+        <img src="images/photo21.png" class="photo__top" alt="">
+        <img src="images/photo22.png" alt="">
+      </div>
+      <div class="photo__box">
+        <img src="images/photo31.png" class="photo__top" alt="">
+        <img src="images/photo32.png" alt="">
+      </div>
+      <div class="photo__box">
+        <img src="images/photo21.png" class="photo__top" alt="">
+        <img src="images/photo22.png" alt="">
+      </div>
+      </div>
+    </section>
+
+
+   <!-- Videolavhalar -->
+     <!-- <section id="videolavhalar" class="videolavhalar"> 
+         <h2 class="news__top">Videolavhalar/h2>
+     <div class="wrapper">
+       <div class="carousel owl-carousel">
+         <div class="video__box">
+          <iframe src="https://www.youtube.com/embed/O1wA02ydvp4" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           
+        </div>
+        <div class="video__box">
+          <iframe  src="https://www.youtube.com/embed/O1wA02ydvp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           
+        </div>
+        <div class="video__box">
+          <iframe  src="https://www.youtube.com/embed/O1wA02ydvp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           
+        </div>
+        <div class="video__box">
+          <iframe  src="https://www.youtube.com/embed/O1wA02ydvp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           
+        </div>
+       </div>
+     </div>
+
+    </section> -->
+
+    <!-- Natijalar -->
+
+    <section id="natijalar" class="natijalar">
+         <h2 class="news__top">O’quvchilarimiz Natijalari</h2>
+
+         <div class="wrapper">
+           <div class="carousel owl-carousel">
+           <div class="result__box">
+             <img src="images/result1.png" class="result__img" alt="">
+             <h3 class="result__h3">Norboyeva Nodira</h3>
+             <p class="result__center" >O'qishga kirgan oliygoh nomi: <br>Toshkent Davlat Milliy Universiteti</p>
+             <p class="result__bottom">Abituriyentlik davri:6 oylik tayyorlov kursi</p>
+            </div>
+            <div class="result__box">
+              <img src="images/result2.png" class="result__img" alt="">
+              <h3 class="result__h3">Mavlonov Abdulla</h3>
+              <p class="result__center" >O'qishga kirgan oliygoh nomi: <br>Toshkent Davlat Yuridik Universiteti</p>
+              <p class="result__bottom">Abituriyentlik davri:8 oylik tayyorlov kursi</p>
+             </div>
+             <div class="result__box">
+              <img src="images/result3.png" class="result__img" alt="">
+              <h3 class="result__h3">Yo‘lchiyeva Madina</h3>
+              <p class="result__center" >O'qishga kirgan oliygoh nomi: <br>Toshkent Davlat Nizomiy Universiteti</p>
+              <p class="result__bottom">Abituriyentlik davri:5 oylik tayyorlov kursi</p>
+             </div>
+            
+             <div class="result__box">
+              <img src="images/result2.png" class="result__img" alt="">
+              <h3 class="result__h3">Mavlonov Abdulla</h3>
+              <p class="result__center" >O'qishga kirgan oliygoh nomi: <br>Toshkent Davlat Yuridik Universiteti</p>
+              <p class="result__bottom">Abituriyentlik davri:8 oylik tayyorlov kursi</p>
+             </div>
+             <div class="result__box">
+              <img src="images/result1.png" class="result__img" alt="">
+              <h3 class="result__h3">Norboyeva Nodira</h3>
+              <p class="result__center" >O'qishga kirgan oliygoh nomi: <br>Toshkent Davlat Milliy Universiteti</p>
+              <p class="result__bottom">Abituriyentlik davri:6 oylik tayyorlov kursi</p>
+             </div>
+             <div class="result__box">
+              <img src="images/result3.png" class="result__img" alt="">
+              <h3 class="result__h3">Yo‘lchiyeva Madina</h3>
+              <p class="result__center" >O'qishga kirgan oliygoh nomi: <br>Toshkent Davlat Nizomiy Universiteti</p>
+              <p class="result__bottom">Abituriyentlik davri:5 oylik tayyorlov kursi</p>
+             </div>
+             <div class="result__box">
+              <img src="images/result2.png" class="result__img" alt="">
+              <h3 class="result__h3">Mavlonov Abdulla</h3>
+              <p class="result__center" >O'qishga kirgan oliygoh nomi: <br>Toshkent Davlat Yuridik Universiteti</p>
+              <p class="result__bottom">Abituriyentlik davri:8 oylik tayyorlov kursi</p>
+             </div>
+           </div>
+         </div>
+    </section>
+
+    <!-- Izohlar -->
+    <section id="izohlar" class="izohlar">
+      <h2 class="news__top">Mijozlarimiz Izohlari</h2>
+      <div class="wrapper">
+        <div class="carousel owl-carousel">
+
+          <div class="comments__box">
+            <img src="images/comment1.png" class="comments__img" alt="">
+            <div class="comments__text-box">
+              <h3 class="comments__h3">Karimova Odina </h3>
+              <p class="comments__unvr">TDMI 1-kurs talabasi</p>
+              <p class="comments__com">Men talaba bo’lishimga sababchi bo‘lgan eng zo‘r o‘quv markaz.</p>
+              <div class="comments__stars">
+                <img class="com__star-img" src="images/Star 1.png" alt="">
+                <img class="com__star-img" src="images/Star 1.png" alt="">
+                <img class="com__star-img" src="images/Star 1.png" alt="">
+                <img class="com__star-img" src="images/Star 1.png" alt="">
+                <img class="com__star-img" src="images/Star 1.png" alt="">
+              </div>
+            </div>
+            </div>
+            <div class="comments__box">
+              <img src="images/comment2.png" class="comments__img" alt="">
+              <div class="comments__text-box">
+                <h3 class="comments__h3">Azizova Durdona </h3>
+                <p class="comments__unvr">TATU 1-kurs talasi</p>
+                <p class="comments__com">Zamonaviy kasblarni o’rganish uchun qulay o’quv markaz deya tavsiya qilaman</p>
+                <div class="comments__stars">
+                  <img class="com__star-img" src="images/Star 1.png" alt="">
+                  <img class="com__star-img" src="images/Star 1.png" alt="">
+                  <img class="com__star-img" src="images/Star 1.png" alt="">
+                  <img class="com__star-img" src="images/Star 1.png" alt="">
+                  <img class="com__star-img" src="images/Star 1.png" alt="">
+                </div>
+              </div>
+              </div>
+              <div class="comments__box">
+                <img src="images/comment3.png" class="comments__img" alt="">
+                <div class="comments__text-box">
+                  <h3 class="comments__h3">Madrahimov Olimjon </h3>
+                  <p class="comments__unvr">TDYU 1-kurs talabasi</p>
+                  <p class="comments__com">Eng tajribali ustozlar jamosiga ega o‘quv markaz sifatiad tavsiya qilaman.</p>
+                  <div class="comments__stars">
+                    <img class="com__star-img" src="images/Star 1.png" alt="">
+                    <img class="com__star-img" src="images/Star 1.png" alt="">
+                    <img class="com__star-img" src="images/Star 1.png" alt="">
+                    <img class="com__star-img" src="images/Star 1.png" alt="">
+                    <img class="com__star-img" src="images/Star 1.png" alt="">
+                  </div>
+                </div>
+                </div>
+                <div class="comments__box">
+                  <img src="images/comment2.png" class="comments__img" alt="">
+                  <div class="comments__text-box">
+                    <h3 class="comments__h3">Azizova Durdona </h3>
+                    <p class="comments__unvr">TATU 1-kurs talasi</p>
+                    <p class="comments__com">Zamonaviy kasblarni o’rganish uchun qulay o’quv markaz deya tavsiya qilaman</p>
+                    <div class="comments__stars">
+                      <img class="com__star-img" src="images/Star 1.png" alt="">
+                      <img class="com__star-img" src="images/Star 1.png" alt="">
+                      <img class="com__star-img" src="images/Star 1.png" alt="">
+                      <img class="com__star-img" src="images/Star 1.png" alt="">
+                      <img class="com__star-img" src="images/Star 1.png" alt="">
+                    </div>
+                  </div>
+                  </div>
+
+                <div class="comments__box">
+                  <img src="images/comment1.png" class="comments__img" alt="">
+                  <div class="comments__text-box">
+                    <h3 class="comments__h3">Karimova Odina </h3>
+                    <p class="comments__unvr">TDMI 1-kurs talabasi</p>
+                    <p class="comments__com">Men talaba bo’lishimga sababchi bo‘lgan eng zo‘r o‘quv markaz.</p>
+                    <div class="comments__stars">
+                      <img class="com__star-img" src="images/Star 1.png" alt="">
+                      <img class="com__star-img" src="images/Star 1.png" alt="">
+                      <img class="com__star-img" src="images/Star 1.png" alt="">
+                      <img class="com__star-img" src="images/Star 1.png" alt="">
+                      <img class="com__star-img" src="images/Star 1.png" alt="">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="comments__box">
+                    <img src="images/comment3.png" class="comments__img" alt="">
+                    <div class="comments__text-box">
+                      <h3 class="comments__h3">Madrahimov Olimjon </h3>
+                      <p class="comments__unvr">TDYU 1-kurs talabasi</p>
+                      <p class="comments__com">Eng tajribali ustozlar jamosiga ega o‘quv markaz sifatiad tavsiya qilaman.</p>
+                      <div class="comments__stars">
+                        <img class="com__star-img" src="images/Star 1.png" alt="">
+                        <img class="com__star-img" src="images/Star 1.png" alt="">
+                        <img class="com__star-img" src="images/Star 1.png" alt="">
+                        <img class="com__star-img" src="images/Star 1.png" alt="">
+                        <img class="com__star-img" src="images/Star 1.png" alt="">
+                      </div>
+                    </div>
+                    </div>
+
+                  <div class="comments__box">
+                    <img src="images/comment2.png" class="comments__img" alt="">
+                    <div class="comments__text-box">
+                      <h3 class="comments__h3">Azizova Durdona </h3>
+                      <p class="comments__unvr">TATU 1-kurs talasi</p>
+                      <p class="comments__com">Zamonaviy kasblarni o’rganish uchun qulay o’quv markaz deya tavsiya qilaman</p>
+                      <div class="comments__stars">
+                        <img class="com__star-img" src="images/Star 1.png" alt="">
+                        <img class="com__star-img" src="images/Star 1.png" alt="">
+                        <img class="com__star-img" src="images/Star 1.png" alt="">
+                        <img class="com__star-img" src="images/Star 1.png" alt="">
+                        <img class="com__star-img" src="images/Star 1.png" alt="">
+                      </div>
+                    </div>
+                    </div>
+        
+          </div>
+      </div>
+
+
+    <!-- </section>
+   <div class="boglanish">
+    <h2 class="news__top">Biz Bilan Bog'lanish</h2>
+    <div class="map" style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ташкент</a><a href="https://yandex.uz/maps/10335/tashkent/?ll=69.211943%2C41.348179&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ташкент — Яндекс.Карты</a><iframe class="map__iframe" src="https://yandex.uz/map-widget/v1/-/CCUquLE6DC"  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+     <div  class="boglanish__text">
+         <div class="location">
+           <img src="images/location.png" alt="">
+           <p class="bog__text">Toshkent shahri, Chilonzor <br> tumani, Ustozlar ko’chasi, 13-uy</p>
+         </div>
+         <div class="phone">
+          <img src="images/phone.png" alt="">
+          <p class="bog__text"> +998 90 350 55 55</p>
+        </div>
+        <div class="email">
+          <img src="images/email.png" alt="">
+          <p class=" bog__text">apexedu@gmail.com</p>
+        </div>
+        <div class="messenger">
+         
+         <p class="bog__text another">Ijtimoiy tarmoqdagi sahifalarimiz: </p>
+         <div class="mess__img">
+         <img src="images/instagram.png" alt="">
+          <img src="images/telegram.png" class="mess__center" alt="">
+          <img src="images/facebook.png" alt="">
+        </div></div>
+
+     </div>
+  </div> </div> -->
+
+  <!-- Aloqd -->
+  <!-- <section id="aloqa" class="aloqa">
+    <h2 class="news__top ">Aloqa</h2>
+    <div class="wrapper-grid">
+    <div class="aloqa__input">
+    <input type="text" class="footer__name" name="name" id="" placeholder="Ism va familiyangizni yozing">
+    <input type="number" class="footer__number" name="number" placeholder="Telefon raqamingizni yozing" >
+    <input type="email" class="footer__email" name="email" id="" placeholder="Email manzilingizni yozing">
+    <button class="footer__btn"><a href="" class="footer__link"> Yuborish</a></button>
+    </div></div>
+   <div class="center__line"></div> 
+   
+     <div class="footer__box">
+      <img src="images/brand_logo.png" class="footer__logo" alt="">
+      <div class="footer__brand">
+      <h4 class="aloqa__footer-text">APEX TA’LIM</h4>
+      <p class="aloqa__motivation">Talaba bo‘lishingizga albatta ishonamiz</p>
+      </div></div>
+      <p class="aloqa__footer">©2021. Apex ta’lim. Xizmatlar litsenziyalangan.</p>
+
+     -->
+
+  </section>
+
+<script>
+               $(".carousel").owlCarousel({
+                margin:30,
+                loop:true,
+                autoplay:true,
+                autoplayTimeout:3000,
+              
+               responsive:{
+              0:{
+                items:1,
+               nav:false
+              },
+              570:{
+                items:2,
+               nav:false
+              },
+              930:{
+                items:3,
+               nav:false
+              },
+               }
+               });
+           </script>
+  <!-- Pastga utkazma -->
+  <div style="width: 100%;height: 1000px;"></div>
+   
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
